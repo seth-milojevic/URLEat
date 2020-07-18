@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: ms-gothic;
+    background: #A32D3E;
+}
+
+header h1 {
+    margin: 1rem;
+    text-align: center;
+    color: #2F0721; 
+}
+
+#app {
+    width: 40%;
+    margin: auto;
+    color: #2F0721;
+}
+
+.shortForm {
+    display: block;
+    text-align: center
+}
+
+label, button, input {
+    display: block;
+    margin: 5px auto 5px auto;
+    color: white;
+}
+
+input {
+    border: 5px solid #2F0721;
+    background-color: #4F0F27;
+    padding: 2px;
+}
+
+button {
+    border-color: #2F0721;
+    background-color: #4F0F27;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    padding: 5px;
+}
+
+#output, #outputlabel {
+    text-align: center;
+}
