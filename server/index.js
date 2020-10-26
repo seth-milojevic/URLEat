@@ -94,7 +94,7 @@ app.use((error, req, res, next) => {
     });
 });
 
-const port = process.env.PORT || 1337;
-app.listen(port, () => {
+const port = process.env.PORT || 3337;
+app.listen(port, '0.0.0.0', () => {
     console.log(`Listening at http://localhost:${port}`);
 });

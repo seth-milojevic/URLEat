@@ -39,9 +39,9 @@ var app = new Vue({
               } else if (this.created.message == "sin") {
                 document.getElementById("output").value = "Slug is in use.";
               } else if (this.created.message == "toolong") {
-                document.getElementById("output").value = "Slug must be < 5 characters.";
+                document.getElementById("output").value = "Slug must be <= 5 characters.";
               } else {
-                document.getElementById("output").value = "localhost:1337/" + this.created.slug;
+                document.getElementById("output").value = "https://URLEat.com/" + this.created.slug;
               }
 
             case 7:
@@ -53,3 +53,17 @@ var app = new Vue({
     }
   }
 });
+
+function copyURL() {
+  /* Get the text field */
+  var cText = document.getElementById("output");
+  /* Select the text field */
+
+  cText.select();
+  cText.setSelectionRange(0, 100);
+  /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+
+  document.execCommand("copy");
+}

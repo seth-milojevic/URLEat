@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>cdg.sh</title>
+        <title>URLEat</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -17,11 +17,17 @@
                     <input v-model="url" name="url" id="url">
                     <label for="slug">Slug</label>
                     <input v-model="slug" name="slug" id="slug">
-                    <button type="submit">Create</button>
+                    <button type="submit" style="display: inline-block;">Create</button>
                 </div>
             </form>
             <label id="outputlabel"> -- Output --</label>
-            <input id="output">
+            <input id="output" readonly="readonly">
+            <img 
+            onclick="copyURL()" 
+            src="./assets/clipboard.png" 
+            id="copy"
+            alt="reset the form"
+            title="Click to copy url to clipboard.">
         </main>
         <script src="https://unpkg.com/vue@2.6.11/dist/vue.min.js"></script>
         <script src="app.js"></script>

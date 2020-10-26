@@ -154,7 +154,7 @@ app.use(function (error, req, res, next) {
     stack: process.env.NODE_ENV === 'production' ? 'pancake-stack' : error.stack
   });
 });
-var port = process.env.PORT || 1337;
-app.listen(port, function () {
+var port = process.env.PORT || 3337;
+app.listen(port, '0.0.0.0', function () {
   console.log("Listening at http://localhost:".concat(port));
 });

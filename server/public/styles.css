@@ -21,6 +21,14 @@ header h1 {
     color: #2F0721;
 }
 
+#copy {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    width: 40px; 
+    height: 40px;
+}
+
 .shortForm {
     display: block;
     text-align: center
