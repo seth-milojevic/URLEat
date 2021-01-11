@@ -26,7 +26,7 @@ const app = new Vue({
             } else if (this.created.message == "toolong") {
                 document.getElementById("output").value = "Slug must be <= 5 characters.";
             } else {
-                document.getElementById("output").value = "https://localhost:3337/" + this.created.slug;
+                document.getElementById("output").value = "localhost:3337/" + this.created.slug;
             }
         }
     }
